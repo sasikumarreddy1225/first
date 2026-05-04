@@ -1,0 +1,41 @@
+{
+"userMenu": {
+        
+          "userMenuLinks": {
+             "item0":  {
+              "label": "LABEL1",
+              "category": "external",
+              "link": "#",
+              "linkType": "default",
+              "linkDescription": "desc1",
+              "authField": "SAML",
+              "documentLink": "/content/dam/srp/global/Legal-Notice.docx",
+              "type": "docLink",
+              "catalogId": "Stellantis"
+            },
+            "item1": {
+              "label": "Label2",
+              "category": "external",
+              "link": "#",
+              "linkType": "default",
+              "linkDescription": "desc2",
+              "authField": "SAML",
+              "documentLink": "/content/dam/srp/global/Project-Legal-Notice.docx",
+              "type": "docLink",
+              "catalogId": "Original Parts"
+            }
+          },
+          "labels": {
+	        "item1":{
+	        "fieldType": "nt:unstructured|1234",
+	        "fieldLabel": "admin"
+	              }
+	           }
+	        },
+	        
+ "userMenu_null":{
+ }	        
+}
+
+
+        

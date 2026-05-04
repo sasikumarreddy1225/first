@@ -1,0 +1,10 @@
+{
+ "notificationsMenu": {
+	    "labels": {
+	        "item1":{
+	        "fieldType": "nt:unstructured|1234",
+	        "fieldLabel": "admin"
+	    }
+	  }
+    }
+  }

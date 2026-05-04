@@ -1,0 +1,6 @@
+{
+    "user.mapping": [
+        "aem-srp-project.core:readService=[srpReadUser]",
+        "aem-srp-project.core:writeService=[srpWriteUser]"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+	"menulinks_reference": {
+		"jcr:primaryType": "nt:unstructured",
+		"sling:resourceType": "srp/components/common/menulinks-reference",
+		"menulinkPath": "/content/srp/menulinks/global/en"
+	}
+}

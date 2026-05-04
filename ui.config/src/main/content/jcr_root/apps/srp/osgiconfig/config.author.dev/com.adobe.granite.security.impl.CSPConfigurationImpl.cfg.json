@@ -1,0 +1,6 @@
+{
+    "enabled": true,
+    "policies": [
+        "frame-ancestors 'self' https://experience.adobe.com"
+    ]
+}

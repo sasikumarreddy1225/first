@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Subscription Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <labels
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/include"
+                        margin="{Boolean}true"
+                        path="/apps/srp/components/common-dialog-fields/labels"/>
+                    <brandLogos
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Subscription Brand Logos"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <subscriptionLogos
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Subscription Logos">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./subscriptionLogos"
+                                                    validation="multi-validate">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <brandLink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Enter Brand Url"
+                                                            name="./brandLink"
+                                                            required="{Boolean}true"
+                                                            rootPath="/content"/>
+                                                        <brandLogo
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Select Respective Brand Logo"
+                                                            name="./brandLogo"
+                                                            required="{Boolean}false"
+                                                            rootPath="/content/dam/srp"/>
+                                                        <authField
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                            fieldLabel="Select Auth Type"
+                                                            name="./authField"
+                                                            required="{Boolean}false">
+                                                            <datasource
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="acs-commons/components/utilities/genericlist/datasource"
+                                                                path="/etc/acs-commons/lists/srp/auth-type"/>
+                                                        </authField>
+                                                        <category
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                            fieldLabel="Select Category"
+                                                            name="./category"
+                                                            required="{Boolean}true">
+                                                            <datasource
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="acs-commons/components/utilities/genericlist/datasource"
+                                                                path="/etc/acs-commons/lists/srp/link-category"/>
+                                                        </category>
+                                                    </items>
+                                                </field>
+                                            </subscriptionLogos>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </brandLogos>
+                    <tags
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/include"
+                        margin="{Boolean}true"
+                        path="/apps/srp/components/common-dialog-fields/tags"/>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

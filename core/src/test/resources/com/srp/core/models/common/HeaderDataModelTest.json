@@ -1,0 +1,27 @@
+{
+	"header": {
+		"showNotificationIcon": "true",
+        "desktopCatalogLogoAlt": "Desktop Logo-123",
+        "desktopCatalogLogo": "/content/dam/srp/asset.jpg",
+        "desktopBlueLogoAlt": "Blue Logo",
+        "desktopBlueLogo": "/content/dam/srp/global/Sample_document.pdf",
+	    "ApplicationLinks": {
+              "jcr:primaryType": "nt:unstructured",
+              "item0": {
+                "jcr:primaryType": "nt:unstructured",
+                "icon": "/content/dam/srp/asset.jpg",
+                "link": "/content/srp/ee/it/en/ir-rp/landingPage",
+                "name": "Fb"
+           }		
+       },
+       
+       "labels": {
+		"fieldType": "nt:unstructured|1234",
+		"fieldLabel": "admin"
+		}
+	},
+	
+	"header_null": {
+	  
+	}
+}

@@ -1,0 +1,61 @@
+<div class="login-details-comp margin-bottom20">
+<div class="srp-comp-title margin-bottom20">${component.title}</div>
+<sly data-sly-use.loginDetails="com.srp.core.models.common.LoginDetailsDataModel">
+ 
+   <sly data-sly-use.srpLabelsTemp="../../template/srpLabels.html">
+      <sly data-sly-call="${srpLabelsTemp.srpLabels @ srpLabelsObj=loginDetails}"></sly>
+    </sly>
+
+   <sly data-sly-test="${loginDetails.onBoardDocumentLinks}">
+			<h2>On Board Document Links</h2>
+         <table class="srp-table">
+            <tr>
+                  <th class="srp-th">Label</th>
+                  <th class="srp-th">Type</th>
+                  <th class="srp-th">Path</th>
+                  <th class="srp-th">Link</th>
+            </tr>
+             <sly data-sly-list.onBoardLinkItems="${loginDetails.onBoardDocumentLinks}">
+                <tr>
+                    <td class="srp-td">${onBoardLinkItems.label}</td>
+                    <td class="srp-td">${onBoardLinkItems.linkType}</td>
+                    <sly data-sly-test="${onBoardLinkItems.type=='docLink'}">
+                        <td class="srp-td">${onBoardLinkItems.document}</td>
+                        <td class="srp-td">-</td>
+                    </sly>
+                    <sly data-sly-test="${onBoardLinkItems.type=='webLink'}">
+                        <td class="srp-td">${onBoardLinkItems.link}</td>
+                    </sly>
+                </tr>
+            </sly>
+         </table>
+	</sly>
+
+   <sly data-sly-test="${loginDetails.reachLinks}">
+			<h2>Reach Links</h2>
+         <table class="srp-table">
+            <tr>
+                  <th class="srp-th">Label</th>
+                  <th class="srp-th">Type</th>
+                  <th class="srp-th">Path</th>
+                  <th class="srp-th">Link</th>
+            </tr>
+             <sly data-sly-list.reachLinkItems="${loginDetails.reachLinks}">
+                <tr>
+                    <td class="srp-td">${reachLinkItems.label}</td>
+                    <td class="srp-td">${reachLinkItems.linkType}</td>
+                    <sly data-sly-test="${reachLinkItems.type=='docLink'}">
+                        <td class="srp-td">${reachLinkItems.document}</td>
+                        <td class="srp-td">-</td>
+                    </sly>
+                    <sly data-sly-test="${reachLinkItems.type=='webLink'}">
+                        <td class="srp-td">${reachLinkItems.link}</td>
+                    </sly>
+                </tr>
+            </sly>
+         </table>
+	</sly>
+</sly>
+
+</div>
+

@@ -1,0 +1,22 @@
+<template data-sly-template.tags="${ @srpTagsObj }">
+    <sly data-sly-test="${srpTagsObj.geoTags || srpTagsObj.roleTags || srpTagsObj.brandTags}">
+        <h1>Tags</h1>
+    </sly>
+    <div class="tags-container">
+        <sly data-sly-test="${srpTagsObj.geoTags}">
+            <sly data-sly-list.geo="${srpTagsObj.geoTags}">
+                <div class="tags"><i class="material-icons">sell</i>${geo}</div>
+            </sly>
+        </sly>
+        <sly data-sly-test="${srpTagsObj.roleTags}">
+            <sly data-sly-list.role="${srpTagsObj.roleTags}">
+                <div class="tags"><i class="material-icons">sell</i>${role}</div>
+            </sly>
+        </sly>
+        <sly data-sly-test="${srpTagsObj.brandTags}">
+            <sly data-sly-list.brand="${srpTagsObj.brandTags}">
+                <div class="tags"><i class="material-icons">sell</i>${brand}</div>
+            </sly>
+        </sly>
+    </div>
+</template>

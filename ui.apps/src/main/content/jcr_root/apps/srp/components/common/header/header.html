@@ -1,0 +1,66 @@
+<div class="header-comp margin-bottom20">
+	
+	  <div class="srp-comp-title margin-bottom20">${component.title}</div>
+      <sly data-sly-use.header="com.srp.core.models.common.HeaderDataModel">
+
+		<sly data-sly-use.headerTemp="../../template/srpLabels.html">
+            <sly data-sly-call="${headerTemp.srpLabels @ srpLabelsObj=header}"></sly>
+        </sly>
+        
+        <sly data-sly-use.srpTagsTemp="../../template/srpTags.html"></sly>
+           <sly data-sly-call="${srpTagsTemp.tags @ srpTagsObj=header}"></sly>
+        </sly>
+
+		<table class="srp-table">
+			<tr>
+				<th class="srp-th">Header Blue Logo</th>
+				<th class="srp-th">Header Catalog Logo</th>
+				<th class="srp-th">Header Ercs Blue Logo</th>
+				<th class="srp-th">Header Ercs Catalog Logo</th>
+            </tr>
+
+			<tr>
+                <td class="srp-td wrap-column">${header.desktopBlueLogo}</td>
+                <td class="srp-td wrap-column">${header.desktopCatalogLogo}</td>
+				<td class="srp-td wrap-column">${header.desktopErcsBlueLogo}</td>
+                <td class="srp-td wrap-column">${header.desktopErcsCatalogLogo}</td>
+            </tr>
+		</table>
+
+		<table class="srp-table">
+			<tr>
+				<th class="srp-th">Header Blue Logo Alt</th>
+				<th class="srp-th">Header Catalog Logo Alt</th>
+				<th class="srp-th">Header Ercs Blue Logo Alt</th>
+				<th class="srp-th">Header Ercs Catalog Logo Alt</th>
+            </tr>
+
+			<tr>
+                <td class="srp-td wrap-column">${header.desktopBlueLogoAlt}</td>
+                <td class="srp-td wrap-column">${header.desktopCatalogLogoAlt}</td>
+				<td class="srp-td wrap-column">${header.desktopErcsBlueLogoAlt}</td>
+                <td class="srp-td wrap-column">${header.desktopErcsCatalogLogoAlt}</td>
+            </tr>
+		</table>
+
+		<sly data-sly-test="${header.applicationLinks}">
+			<table class="srp-table">
+				<h2>Application Links</h2>
+				<tr>
+					<th class="srp-th">Application Name</th>
+					<th class="srp-th">Application icon</th>
+					<th class="srp-th">Application link</th>
+				</tr>
+				<sly data-sly-list.appList="${header.applicationLinks}">
+					<tr>
+						<td class="srp-td">${appList.name}</td>
+						<td class="srp-td">${appList.icon}</td>
+						<td class="srp-td">${appList.link}</td>
+					</tr>
+					
+					</sly>
+			</table>
+		</sly>		 
+
+	  </sly>	
+</div>

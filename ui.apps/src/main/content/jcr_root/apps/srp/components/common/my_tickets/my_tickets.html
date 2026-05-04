@@ -1,0 +1,14 @@
+<div class="my-tickets-comp">
+
+   <div class="srp-comp-title margin-bottom20">${component.title}</div>
+   <sly data-sly-use.myTickets="com.srp.core.models.common.MyTicketsDataModel" />
+
+   <sly data-sly-use.srpLabelsTemp="../../template/srpLabels.html">
+      <sly data-sly-call="${srpLabelsTemp.srpLabels @ srpLabelsObj=myTickets}"></sly>
+   </sly>
+
+   <sly data-sly-use.srpTagsTemp="../../template/srpTags.html">
+      <sly data-sly-call="${srpTagsTemp.tags @ tagsObj=myTickets}"></sly>
+   </sly>
+
+</div>

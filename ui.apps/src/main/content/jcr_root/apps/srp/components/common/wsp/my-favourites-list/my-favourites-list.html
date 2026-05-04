@@ -1,0 +1,17 @@
+<div class="my-favourites-list-comp margin-bottom20">
+
+   <div class="srp-comp-title margin-bottom20">${component.title}</div>
+   <sly data-sly-use.favlist="com.srp.core.models.common.MyFavouritesProductListDataModel" />
+
+   <sly data-sly-use.srpLabelsTemp="../../../template/srpLabels.html">
+      <sly data-sly-call="${srpLabelsTemp.srpLabels @ srpLabelsObj=favlist}"></sly>
+   </sly>
+
+   <sly data-sly-use.productxfTemp="../../../template/srp-xffragments.html"></sly>
+		<sly data-sly-call="${productxfTemp.srpexpf @ srpexpObj=favlist}"></sly>
+        
+    <sly data-sly-use.srpTagsTemp="../../../template/srpTags.html"></sly>
+      <sly data-sly-call="${srpTagsTemp.tags @ srpTagsObj=favlist}"></sly>
+   </sly>
+
+</div>

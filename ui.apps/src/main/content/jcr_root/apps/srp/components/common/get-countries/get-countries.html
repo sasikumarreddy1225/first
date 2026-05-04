@@ -1,0 +1,18 @@
+<div class="get-countries-comp margin-bottom20">
+
+   <div class="srp-comp-title margin-bottom20">${component.title}</div>
+   <sly data-sly-use.getcountries="com.srp.core.models.common.GetCountriesDataModel" />
+   <table class="srp-table">
+      <th class="srp-th">Country Code</th>
+      <th class="srp-th">Country Name</th>
+      <th class="srp-th">Country Label</th>
+      <sly data-sly-list.countrylist="${getcountries.countryList}">
+         <tr>
+            <td class="srp-td">${countrylist.code}</td>
+            <td class="srp-td">${countrylist.name}</td>
+            <td class="srp-td">${countrylist.label}</td>
+         </tr>
+      </sly>
+   </table>
+
+</div>

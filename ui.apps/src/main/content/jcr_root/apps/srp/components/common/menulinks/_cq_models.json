@@ -1,0 +1,62 @@
+{
+  "models": [
+    {
+      "id": "menulinks",
+      "fields": [
+        {
+          "component": "text-input",
+          "name": "label",
+          "label": "Menulink Label"
+        },
+        {
+          "component": "select",
+          "name": "linkType",
+          "label": "Link Target Type",
+          "options": [
+            { "name": "Default", "value": "default" },
+            { "name": "New Tab", "value": "newTab" }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "type",
+          "label": "Link Type",
+          "options": [
+            { "name": "Document Link", "value": "docLink" },
+            { "name": "Web Link", "value": "webLink" }
+          ]
+        },
+        {
+          "component": "aem-content",
+          "name": "documentLink",
+          "label": "Document Path"
+        },
+        {
+          "component": "aem-content",
+          "name": "link",
+          "label": "Web Link Path"
+        },
+        {
+          "component": "boolean-field",
+          "name": "isDefault",
+          "label": "Is Default"
+        },
+        {
+          "component": "rich-text",
+          "name": "linkDescription",
+          "label": "Description"
+        },
+        {
+          "component": "text-input",
+          "name": "authField",
+          "label": "Auth Type"
+        },
+        {
+          "component": "text-input",
+          "name": "catalogId",
+          "label": "Catalog Id"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<template data-sly-template.srpLabels="${ @srpLabelsObj }">
+    <table class="srp-table">
+        <sly data-sly-test="${srpLabelsObj.labels}">
+            <h2>Labels</h2>
+            <tr>
+                <th class="srp-th">Id</th>
+                <th class="srp-th">Type</th>
+                <th class="srp-th">Label</th>
+            </tr>
+
+            <sly data-sly-list.labelItems="${srpLabelsObj.labels}">
+                <tr>
+                    <td class="srp-td">${labelItems.labelId}</td>
+                    <td class="srp-td">${labelItems.labelType}</td>
+                    <td class="srp-td">${labelItems.label}</td>
+                </tr>
+            </sly>
+
+        </sly>
+    </table>
+</template>

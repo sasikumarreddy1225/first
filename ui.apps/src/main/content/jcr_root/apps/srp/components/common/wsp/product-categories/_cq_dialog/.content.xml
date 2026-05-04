@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product Categories"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <labels
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/include"
+                        margin="{Boolean}true"
+                        path="/apps/srp/components/common-dialog-fields/labels"/>
+                    <experience-fragments
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Experience Fragments"
+                        sling:resourceType="granite/ui/components/foundation/include"
+                        margin="{Boolean}true"
+                        path="/apps/srp/components/common-dialog-fields/srp-xf"/>
+                    <categories
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Categories"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <cataegories
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Categories">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./categories"
+                                                    validation="multi-validate">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <name
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                            fieldLabel="Select Main Category Name"
+                                                            name="./name">
+                                                            <datasource
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="acs-commons/components/utilities/genericlist/datasource"
+                                                                path="/etc/acs-commons/lists/srp/product-category"/>
+                                                        </name>
+                                                        <category-label
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter Main Catalog Label"
+                                                            name="./label"/>
+                                                        <icon
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Select Respective Application icon"
+                                                            name="./iconPath"
+                                                            required="{Boolean}false"
+                                                            rootPath="/content/dam/srp"/>
+                                                        <subcategories
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                            composite="{Boolean}true"
+                                                            fieldLabel="Sub Categories">
+                                                            <field
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                name="./subcategories"
+                                                                validation="multi-validate">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <name
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                        fieldLabel="Select Sub Category Name"
+                                                                        name="./name">
+                                                                        <datasource
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="acs-commons/components/utilities/genericlist/datasource"
+                                                                            path="/etc/acs-commons/lists/srp/product-subcategory"/>
+                                                                    </name>
+                                                                    <label
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldLabel="Enter Label"
+                                                                        name="./label"/>
+                                                                    <icon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldLabel="Select Respective Application icon"
+                                                                        name="./iconPath"
+                                                                        required="{Boolean}false"
+                                                                        rootPath="/content/dam/srp"/>
+                                                                </items>
+                                                            </field>
+                                                        </subcategories>
+                                                    </items>
+                                                </field>
+                                            </cataegories>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </categories>
+                    <tags
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/include"
+                        margin="{Boolean}true"
+                        path="/apps/srp/components/common-dialog-fields/tags"/>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

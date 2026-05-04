@@ -1,0 +1,32 @@
+{
+	"footer_links": {
+		"sling:resourceType": "srp/components/common/footerlinks",
+		"footerLinks": {
+			"jcr:primaryType": "nt:unstructured",
+			"item0": {
+				"jcr:primaryType": "nt:unstructured",
+				"type": "docLink",
+				"category": "external",
+				"label": "Terms and Conditions",
+				"document": "/content/dam/srp/global/Sample_document.pdf",
+				"linkType": "default"
+			},
+			"item1": {
+				"jcr:primaryType": "nt:unstructured",
+				"type": "webLink",
+				"category": "external",
+				"label": "Privacy and Policies",
+				"linkType": "newtab",
+				"webLink": "/content/srp/global/en/login"
+			}
+		},
+		"labels": {
+			"item1": {
+				"fieldType": "nt:unstructured|1234",
+				"fieldLabel": "admin"
+			}
+		}
+	},
+	"footer_null":{
+	}
+}

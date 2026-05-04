@@ -1,0 +1,13 @@
+{
+  "adminGroups": {
+    "item0": {
+      "group": "asdf|123"
+    }
+  },
+  "adminConfigNull": {},
+  "adminConfigNoGrp": {
+    "adminGroups": {
+      "item0": {}
+    }
+  }
+}

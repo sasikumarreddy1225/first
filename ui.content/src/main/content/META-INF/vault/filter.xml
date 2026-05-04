@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/srp" mode="merge"/>
+    <filter root="/content/srp" mode="merge"/>
+    <filter root="/content/dam/srp" mode="merge">
+        <exclude pattern="/content/dam/srp(/.*)?"/>
+        <include pattern="/content/dam/srp/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/srp/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/srp" mode="merge"/>
+</workspaceFilter>

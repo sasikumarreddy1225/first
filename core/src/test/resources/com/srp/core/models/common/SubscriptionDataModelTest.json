@@ -1,0 +1,24 @@
+{
+	"subscription": {
+		"sling:resourceType": "srp/components/common/subscription",
+		"labels": {
+			"jcr:primaryType": "nt:unstructured",
+			"item0": {
+				"label": "Stellantis Subscriptions",
+				"fieldType": "STELLANTIS_SUBSCRIPTIONS|92eab938-058d-34c4-227d-1306063c9275"
+				
+			}
+		},
+		"subscriptionLogos": {
+			"item0": {
+				"brandLink": "#",
+				"brandLogo": "/content/dam/srp/global/Abarth.png",
+				"authField": "authvalue",
+				"jcr:primaryType": "nt:unstructured"
+			}
+		}
+	},
+	"subscription_null":{
+	}
+}
+

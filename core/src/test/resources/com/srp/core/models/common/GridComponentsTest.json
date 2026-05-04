@@ -1,0 +1,12 @@
+{
+ "job_cards": {
+	    "isGrid": true,
+	    "isDisabled": true,
+	    "labels": {
+	        "item1":{
+	        "fieldType": "nt:unstructured|1234",
+	        "fieldLabel": "admin"
+	    }
+	  }
+    }
+  }

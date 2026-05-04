@@ -1,0 +1,15 @@
+{
+	"results": [
+		{
+			"labelId": "c0464ddb-17d7-1f35-754a-e3dfa7756f7d",
+			"labelName": "WasThisInformationHelpful",
+			"type": "label"
+		},
+		{
+			"labelId": "db987718-e9e3-9aca-91b5-b858704a93d1",
+			"labelName": "HelpfulYes",
+			"type": "label"
+		}
+	],
+	"errorData": null
+}

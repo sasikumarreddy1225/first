@@ -1,0 +1,82 @@
+name: CICD Pipeline
+on:
+  push: 
+    branches: 
+    - main 
+    - master 
+    - develop
+    - feature-deployment
+    - release-*
+    - release*
+  pull_request:  
+    types: [synchronize]
+    branches:  
+     - develop  
+     - master
+     - main  
+jobs:
+  Compile: 
+    uses: Enterprise-Devops/DevSecOpsTemplates/.github/workflows/IAPAEM-JavaBuildSubmodules.yml@main
+    with:
+      CI_IMAGE: ${{vars.JAVA11_NODE20_BT22_IMAGE_NEW}}
+      Build_Command: |
+              mvn -B clean install
+              mkdir target
+              mv ui.apps/target/*.zip target/
+              mv all/target/*.zip target/
+              mv ui.config/target/*.zip target/
+              mv ui.content/target/*.zip target/
+              mv ui.tests/target/*.gz target/
+              mv core/target/*.jar target/
+              mv dispatcher/target/*.zip target/
+              mv it.tests/target/*.jar target/
+              mv ui.apps.structure/target/*.zip target/
+              cd target
+              ls -ltr
+      Artifact_path: "./*"
+      Artifact_Key: "${{ github.sha }}-${{github.run_id}}"
+    secrets:
+        PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+        JFROG_USERNAME: ${{ secrets.JFROG_USERNAME }}
+        JFROG_PASSWORD: ${{ secrets.JFROG_PASSWORD }}
+        
+  PublishArtifacts:
+    needs: [Compile]
+    if: (success('Compile')) 
+    uses: Enterprise-Devops/DevSecOpsTemplates/.github/workflows/uploadArtifact.yml@main
+    with:
+      CI_IMAGE: ${{ vars.PUBLISH_ARTIFACTS_IMAGE_NEW }}
+      File_path:  "./*"
+      Artifact_path: "./*"
+      Artifact_Key: "${{ github.sha }}-${{github.run_id}}"
+    secrets: inherit
+      
+  CodeQuality:
+     needs: [ PublishArtifacts ]
+     if: (success('PublishArtifacts')) 
+     uses: Enterprise-Devops/DevSecOpsTemplates/.github/workflows/IAPAEM_mvn_sonar.yml@main
+     with:
+       BuildTool: "maven"
+       CI_IMAGE: ${{vars.SONAR_IMAGE_JDK11_NEW}}
+       ParentPomPath: "."
+       Artifact_path: "./*"                       
+       Artifact_Key: "${{ github.sha }}-${{github.run_id}}"
+     secrets:
+       sonar_host_url: ${{ secrets.SONAR_HOST_URL }}
+       sonar_login: ${{ secrets.SONAR_LOGIN_TOKEN }}
+       JFROG_USERNAME: ${{ secrets.JFROG_USERNAME }}
+       JFROG_PASSWORD: ${{ secrets.JFROG_PASSWORD }}
+       JFROGUSER: ${{ secrets.JFROGUSER }}
+       JFROGPASS: ${{ secrets.JFROGPASS }}
+        
+  QualityGates:
+     needs: CodeQuality
+     if: (success('CodeQuality'))
+     uses: Enterprise-Devops/DevSecOpsTemplates/.github/workflows/QualityGate.yml@main
+     with:
+       CI_Image: ${{ vars.SONAR_QUALITYGATES_IMAGE_NEW }}
+     secrets:
+       sonar_host_url: ${{ secrets.SONAR_HOST_URL }}
+       sonar_login: ${{ secrets.SONAR_LOGIN_TOKEN }}
+       JFROG_USERNAME: ${{ secrets.JFROG_USERNAME }}
+       JFROG_PASSWORD: ${{ secrets.JFROG_PASSWORD }}
