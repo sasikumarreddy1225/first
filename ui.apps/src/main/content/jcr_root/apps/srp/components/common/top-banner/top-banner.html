@@ -1,0 +1,35 @@
+<div class="top-banner-comp">
+    <div class="srp-comp-title margin-bottom20">${component.title}</div>
+    <sly data-sly-use.bannerModel="com.srp.core.models.common.TopBannerDataModel" />
+
+      <sly data-sly-use.srpTagsTemp="../../template/srpTags.html">
+        <sly data-sly-call="${srpTagsTemp.tags @ tagsObj=bannerModel}"></sly>
+    </sly>
+
+    <table class="srp-table">
+        <tr>
+            <th class="srp-th">CTA Label</th>
+            <th class="srp-th">Image</th>
+            <th class="srp-th">Path</th>
+            <th class="srp-th">LinkType</th>
+            <th class="srp-th">StartDate</th>
+            <th class="srp-th">EndDate</th>
+        </tr>
+
+        <sly data-sly-list.topBannerItem="${bannerModel.banners}">
+            <tr>
+                <td class="srp-td">${topBannerItem.ctaLabel}</td>
+                <td class="srp-td wrap-column">${topBannerItem.image}</td>
+                <td class="srp-td">${topBannerItem.link}</td>
+                <td class="srp-td">${topBannerItem.linkType}</td>
+                <td class="srp-td">${topBannerItem.startDate}</td>
+                <td class="srp-td">${topBannerItem.endDate}</td>
+            </tr>
+        </sly>
+
+    </table>
+
+    </sly>
+
+
+</div>

@@ -1,0 +1,16 @@
+{
+	"labels": {
+		"fieldType": "nt:unstructured|1234",
+		"fieldLabel": "admin",
+		"formErrors": {
+			"item0": {
+				"errorType": "nt:unstructured|1234",
+				"errorMsg": "admin"
+			}
+		}
+	},
+	"labels_null": {
+		"fieldType": "nt:unstructured|1234",
+		"label": "admin"
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"favourite_title":	 {
+		  "sling:resourceType": "srp/components/common/favourites",
+		  "widgetLinks": {
+		    "jcr:primaryType": "nt:unstructured",
+		    "item0": {
+		      "jcr:primaryType": "nt:unstructured",
+		      "type": "docLink",
+		      "category": "external",
+		      "label": "WIDGET DOC LABEL 1",
+		      "document": "/content/dam/srp/global/Sample_document.pdf",
+		      "linkType": "newtab"
+		    },
+		    "item1": {
+		      "jcr:primaryType": "nt:unstructured",
+		      "type": "webLink",
+		      "category": "external",
+		      "label": "WIDGET WEB LABEL 1",
+		      "linkType": "newtab",
+		      "webLink": "/content/srp/ee"
+		    }
+		  },
+		  "labels": {
+		"fieldType": "nt:unstructured|1234",
+		"fieldLabel": "admin"
+		}
+		},
+     "favourites_null":{
+          
+          
+     }		
+}

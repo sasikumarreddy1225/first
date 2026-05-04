@@ -1,0 +1,17 @@
+{
+	"fav_list": {
+		"experienceFragments": {
+			"jcr:primaryType": "nt:unstructured",
+			"item0": {
+				"jcr:primaryType": "nt:unstructured",
+				"xfPath": "/content/experience-fragments/srp/ee/it/en/banner/master"
+			}
+		},
+		"labels": {
+			"item1": {
+				"fieldType": "nt:unstructured|1234",
+				"fieldLabel": "admin"
+			}
+		}
+	}
+}

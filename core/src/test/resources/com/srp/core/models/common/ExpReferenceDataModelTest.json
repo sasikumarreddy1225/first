@@ -1,0 +1,7 @@
+{
+	"exp_reference": {
+		"jcr:primaryType": "nt:unstructured",
+		"sling:resourceType": "srp/components/common/exp-reference",
+		"expFragPath": "/content/srp/menulinks/global/en"
+	}
+}

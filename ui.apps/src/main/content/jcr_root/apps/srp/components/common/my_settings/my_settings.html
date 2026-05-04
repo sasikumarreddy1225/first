@@ -1,0 +1,14 @@
+<div class="my-settings-comp margin-bottom20">
+
+   <div class="srp-comp-title margin-bottom20">${component.title}</div>
+   <sly data-sly-use.mySettings="com.srp.core.models.common.MySettingsDataModel" />
+
+   <sly data-sly-use.srpLabelsTemp="../../template/srpLabels.html">
+      <sly data-sly-call="${srpLabelsTemp.srpLabels @ srpLabelsObj=mySettings}"></sly>
+   </sly>
+   
+   <sly data-sly-use.srpTagsTemp="../../template/srpTags.html"></sly>
+      <sly data-sly-call="${srpTagsTemp.tags @ srpTagsObj=mySettings}"></sly>
+   </sly>
+
+</div>

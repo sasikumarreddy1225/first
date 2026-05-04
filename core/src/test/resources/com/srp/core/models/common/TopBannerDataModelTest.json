@@ -1,0 +1,18 @@
+{
+   "banner_details":
+		{
+		  "sling:resourceType": "srp/components/common/top-banner",
+		  "banners": {
+		    "item0": {
+		      "link": "/content/srp/ee/it/en/after-sales/ir",
+		      "image": "/content/dam/srp/asset.jpg",
+		      "ctaLabel": "BANNER IMAGE 1",
+		      "linkType": "default",
+		      "startDate": "Tue Nov 19 2024 00:00:00 GMT+0530",
+		      "endDate": "Fri Nov 29 2024 00:00:00 GMT+0530"
+		     }
+		   }
+		 },
+	"banner_null":{
+	}	 
+}

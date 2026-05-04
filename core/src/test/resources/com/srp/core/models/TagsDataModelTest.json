@@ -1,0 +1,16 @@
+{
+	"tags": {
+		"roleTags": [
+			"srp:position/13-service-advisor"
+		],
+		"geoTags": [
+			"srp:geography/na/usa/grate-lakes"
+		],
+		"brandTags": [
+			"srp:brand/jeep",
+			"srp:brand/fiat"
+		]
+	},
+	"tags_ null": {
+	}
+}

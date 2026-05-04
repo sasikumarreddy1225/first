@@ -1,0 +1,31 @@
+{
+	"catalog": {
+		"sling:resourceType": "srp/components/common/catalog",
+		"labels": {
+			"item0": {
+				"label": "VIN Number",
+				"fieldType": "VIN_NUMBER|d07bd077-59cf-6532-dde5-fc40bf4b07ff"
+			}
+		},
+		"categories": {
+			"item0": {
+				"categoryLabel": "Stellantis Vehicle Parts  Catalogs",
+				"categoryId": "Sample Category ID"
+			}
+		},
+		"catalogs": {
+			"item0": {
+				"linkType": "default",
+				"label": "Stellantis Original Parts & Technical Documentation",
+				"icon": "/content/dam/srp/global/SL_Logo.png",
+				"catalogId": "Stellantis Original Parts & Technical Documentation",
+				"categoryId": "Stellantis Vehicle Parts  Catalogs",
+				"link": "#",
+				"category": "external",
+				"authField": "authvalue"
+			}
+		}
+	},
+	"catalog_null": {
+	}
+}

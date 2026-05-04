@@ -1,0 +1,14 @@
+<div class="job-cards-comp">
+
+   <div class="srp-comp-title margin-bottom20">${component.title}</div>
+   <sly data-sly-use.jobCards="com.srp.core.models.common.JobCardsDataModel" />
+
+   <sly data-sly-use.srpLabelsTemp="../../template/srpLabels.html">
+      <sly data-sly-call="${srpLabelsTemp.srpLabels @ srpLabelsObj=jobCards}"></sly>
+   </sly>
+   
+   <sly data-sly-use.srpTagsTemp="../../template/srpTags.html">
+      <sly data-sly-call="${srpTagsTemp.tags @ tagsObj=jobCards}"></sly>
+   </sly>
+
+</div>

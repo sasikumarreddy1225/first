@@ -1,0 +1,17 @@
+{
+	"countries": {
+		"countryList": {
+			"jcr:primaryType": "nt:unstructured",
+			"item0": {
+				"jcr:primaryType": "nt:unstructured",
+				"countryCode": "FR|France",
+				"label": "France"
+			},
+			"item1": {
+				"jcr:primaryType": "nt:unstructured",
+				"countryCode": "DE|Germany",
+				"label": "Germany"
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+<div class="order-details-preview-comp margin-bottom20">
+
+   <div class="srp-comp-title margin-bottom20">${component.title}</div>
+   <sly data-sly-use.orderDetails="com.srp.core.models.common.OrderDetailsPreviewDataModel" />
+
+   <sly data-sly-use.srpLabelsTemp="../../template/srpLabels.html">
+      <sly data-sly-call="${srpLabelsTemp.srpLabels @ srpLabelsObj=orderDetails}"></sly>
+   </sly>
+
+   <sly data-sly-use.srpTagsTemp="../../template/srpTags.html"></sly>
+      <sly data-sly-call="${srpTagsTemp.tags @ srpTagsObj=orderDetails}"></sly>
+   </sly>
+
+</div>

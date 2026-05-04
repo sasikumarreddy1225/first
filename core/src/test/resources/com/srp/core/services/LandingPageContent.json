@@ -1,0 +1,99 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Jul 25 2025 11:35:28 GMT+0530",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "IR",
+    "cq:template": "/conf/srp/settings/wcm/templates/landing-page-template",
+    "jcr:created": "Fri Jul 25 2025 11:35:28 GMT+0530",
+    "cq:lastModified": "Mon Jul 28 2025 03:51:44 GMT+0530",
+    "sling:resourceType": "srp/components/page",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "layout": "responsiveGrid",
+        "jcr:lastModified": "Fri Jul 25 2025 12:54:16 GMT+0530",
+        "sling:resourceType": "srp/components/container",
+        "srp_container": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Fri Jul 25 2025 12:59:17 GMT+0530",
+          "jcr:lastModified": "Fri Jul 25 2025 12:59:17 GMT+0530",
+          "sling:resourceType": "srp/components/common/srp-container",
+          "login_details": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "loginLogo": "/content/dam/srp/asset.jpg",
+            "mobileImage": "/content/dam/srp/asset.jpg",
+            "jcr:lastModifiedBy": "admin",
+            "leftHeaderLogo": "/content/dam/srp/asset.jpg",
+            "jcr:created": "Fri Jul 25 2025 13:16:31 GMT+0530",
+            "rightHeaderLogo": "/content/dam/srp/asset.jpg",
+            "jcr:lastModified": "Mon Jul 28 2025 03:51:44 GMT+0530",
+            "desktopImage": "/content/dam/srp/asset.jpg",
+            "sling:resourceType": "srp/components/common/login-details",
+            "links": {
+              "jcr:primaryType": "nt:unstructured",
+              "item0": {
+                "jcr:primaryType": "nt:unstructured",
+                "text": "On-Board Documentation",
+                "onBoardDocumentLinks": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "link": "/content/srp/global/en/footer",
+                    "type": "docLink",
+                    "category": "external",
+                    "label": "Citreon",
+                    "document": "/content/dam/srp/asset.jpg",
+                    "linkType": "newTab"
+                  },
+                  "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "link": "/content/srp/global/en/login",
+                    "type": "docLink",
+                    "category": "external",
+                    "label": "Peugeot",
+                    "document": "/content/dam/srp/asset.jpg",
+                    "linkType": "default"
+                  }
+                }
+              },
+              "item1": {
+                "jcr:primaryType": "nt:unstructured",
+                "text": "Web-Documentation",
+                "onBoardDocumentLinks": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "link": "/content/srp/ee/it/en/after-sales/ir",
+                    "type": "webLink",
+                    "category": "external",
+                    "label": "WebOne",
+                    "linkType": "default",
+                    "webLink": "/content/srp/global/en/footer"
+                  },
+                  "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "link": "/content/dam/srp/asset.jpg",
+                    "type": "webLink",
+                    "category": "external",
+                    "label": "Pegion",
+                    "linkType": "newTab",
+                    "webLink": "/content/srp/ee/it"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

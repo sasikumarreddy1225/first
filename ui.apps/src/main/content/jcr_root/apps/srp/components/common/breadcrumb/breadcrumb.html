@@ -1,0 +1,10 @@
+<div class="breadcrumb-comp">
+
+   <div class="srp-comp-title margin-bottom20">${component.title}</div>
+   <sly data-sly-use.breadcrumb="com.srp.core.models.common.BreadcrumbDataModel" />
+
+   <sly data-sly-use.srpLabelsTemp="../../template/srpLabels.html">
+      <sly data-sly-call="${srpLabelsTemp.srpLabels @ srpLabelsObj=breadcrumb}"></sly>
+   </sly>
+
+</div>

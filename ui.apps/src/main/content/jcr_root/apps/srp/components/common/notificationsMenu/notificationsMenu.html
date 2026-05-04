@@ -1,0 +1,10 @@
+<div class="notificationsMenu-comp">
+
+   <div class="srp-comp-title margin-bottom20">${component.title}</div>
+   <sly data-sly-use.notifications="com.srp.core.models.common.NotificationsMenuDataModel" />
+
+   <sly data-sly-use.srpLabelsTemp="../../template/srpLabels.html">
+      <sly data-sly-call="${srpLabelsTemp.srpLabels @ srpLabelsObj=notifications}"></sly>
+   </sly>
+
+</div>

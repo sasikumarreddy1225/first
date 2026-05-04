@@ -1,0 +1,28 @@
+<template data-sly-template.srplinks="${ @srpLinksObj }">
+    <table class="srp-table">
+        <sly data-sly-test="${srpLinksObj.links}">
+            <h2>Links</h2>
+            <tr>
+                <th class="srp-th">Label</th>
+                <th class="srp-th">Type</th>
+                <th class="srp-th">Path</th>
+                <th class="srp-th">Category</th>
+            </tr>
+
+            <sly data-sly-list.srpLinkItems="${srpLinksObj.links}">
+                <tr>
+                    <td class="srp-td">${srpLinkItems.label}</td>
+                    <td class="srp-td">${srpLinkItems.linkType}</td>
+                    <sly data-sly-test="${srpLinkItems.type=='docLink'}">
+                        <td class="srp-td wrap-column">${srpLinkItems.document}</td>
+                    </sly>
+                    <sly data-sly-test="${srpLinkItems.type=='webLink'}">
+                        <td class="srp-td wrap-column">${srpLinkItems.link}</td>
+                    </sly>
+                    <td class="srp-td">${srpLinkItems.category}</td>
+                </tr>
+            </sly>
+
+        </sly>
+    </table>
+</template>

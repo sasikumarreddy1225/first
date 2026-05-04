@@ -1,0 +1,9 @@
+<div class="author-conf-comp padding10">
+        ${component.title}
+    <sly data-sly-use.config="com.srp.core.models.configuration.AuthorConfigurationsDataModel">
+        <h4>Author Group:${config.groupName}</h4>
+        <sly data-sly-use.tagsTemp="../../template/tags.html">
+            <sly data-sly-call="${tagsTemp.tags @ tagsObj=config}"></sly>
+        </sly>
+    </sly>
+</div>

@@ -1,0 +1,41 @@
+{
+	"templateType": "/conf/srp/settings/wcm/templates/landing-page-template",
+	"components": [
+		{
+			"componentType": "srp/components/common/srp-container",
+			"data": [
+				{
+					
+				}
+			],
+			"components": [
+				{
+					"componentType": "srp/components/common/login-details",
+					"data": [
+						{
+							
+						}
+					]
+				}
+			]
+		},
+		{
+			"componentType": "srp/components/common/srp-container",
+			"data": [
+				{
+					
+				}
+			],
+			"components": [
+				{
+					"componentType": "srp/components/common/login-details",
+					"data": [
+						{
+							
+						}
+					]
+				}
+			]
+		}
+	]
+}

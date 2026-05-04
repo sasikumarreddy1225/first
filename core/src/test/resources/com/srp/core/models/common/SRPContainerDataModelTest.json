@@ -1,0 +1,110 @@
+{
+	"srp_container_without_children": {
+		"jcr:primaryType": "nt:unstructured",
+		"sling:resourceType": "srp/components/common/srp-container"
+	},
+	"srp_container_with_filters": {
+		"jcr:primaryType": "nt:unstructured",
+		"jcr:createdBy": "admin",
+		"sling:resourceType": "srp/components/common/srp-container",
+		"roleTags": [
+			"srp:position/04-sales-manager"
+		],
+		"geoTags": [
+			"srp:geo/usa"
+		],
+		"brandTags": [
+			"srp:brand/fiat"
+		],
+		"login_details": {
+			"jcr:primaryType": "nt:unstructured",
+			"loginLogo": "/content/dam/srp/asset.jpg",
+			"mobileImage": "/content/dam/srp/asset.jpg",
+			"leftHeaderLogo": "/content/dam/srp/asset.jpg",
+			"rightHeaderLogo": "/content/dam/srp/asset.jpg",
+			"desktopImage": "/content/dam/srp/asset.jpg",
+			"sling:resourceType": "srp/components/common/login-details",
+			"onBoardDocumentLinks": {
+				"item0": {
+					"path": "/content/dam/srp/asset.jpg",
+					"type": "docLink",
+					"label": "citreon",
+					"linkType": "newTab",
+					"roleTags": [
+						"srp:position/04-sales-manager"
+					],
+					"geoTags": [
+						"srp:geo/usa"
+					],
+					"brandTags": [
+						"srp:brand/fiat"
+					]
+				}
+			},
+			"reachLinks": {
+				"item0": {
+					"path": "/content/dam/srp/asset.jpg",
+					"type": "docLink",
+					"label": "reach",
+					"linkType": "newTab",
+					"roleTags": [
+						"srp:position/04-sales-manager"
+					],
+					"geoTags": [
+						"srp:geo/usa"
+					],
+					"brandTags": [
+						"srp:brand/fiat"
+					]
+				}
+			}
+		}
+	},
+	"srp_container": {
+		"jcr:primaryType": "nt:unstructured",
+		"sling:resourceType": "srp/components/common/srp-container",
+		"login_details": {
+			"jcr:primaryType": "nt:unstructured",
+			"loginLogo": "/content/dam/srp/asset.jpg",
+			"mobileImage": "/content/dam/srp/asset.jpg",
+			"leftHeaderLogo": "/content/dam/srp/asset.jpg",
+			"rightHeaderLogo": "/content/dam/srp/asset.jpg",
+			"desktopImage": "/content/dam/srp/asset.jpg",
+			"sling:resourceType": "srp/components/common/login-details",
+			"onBoardDocumentLinks": {
+				"item0": {
+					"path": "/content/dam/srp/asset.jpg",
+					"type": "docLink",
+					"label": "citreon",
+					"linkType": "newTab",
+					"roleTags": [
+						"srp:position/04-sales-manager"
+					],
+					"geoTags": [
+						"srp:geo/usa"
+					],
+					"brandTags": [
+						"srp:brand/fiat"
+					]
+				}
+			},
+			"reachLinks": {
+				"item0": {
+					"path": "/content/dam/srp/asset.jpg",
+					"type": "docLink",
+					"label": "reach",
+					"linkType": "newTab",
+					"roleTags": [
+						"srp:position/04-sales-manager"
+					],
+					"geoTags": [
+						"srp:geo/usa"
+					],
+					"brandTags": [
+						"srp:brand/fiat"
+					]
+				}
+			}
+		}
+	}
+}

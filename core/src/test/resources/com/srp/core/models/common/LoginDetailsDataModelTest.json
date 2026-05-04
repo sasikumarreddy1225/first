@@ -1,0 +1,99 @@
+{
+	"login-details": {
+		"loginLogo": "www.adobe.com/content/dam/srp/asset.jpg",
+		"desktopImageAlt": "Desktop Image's Alt Text",
+		"mobileImage": "www.adobe.com/content/dam/srp/asset.jpg",
+		"leftHeaderLogo": "www.adobe.com/content/dam/srp/asset.jpg",
+		"mobileImageAlt": "Mobile Image's Alt Text",
+		"loginLogoAlt": "Login LOGO's Alt Text",
+		"rightHeaderLogo": "www.adobe.com/content/dam/srp/asset.jpg",
+		"desktopImage": "www.adobe.com/content/dam/srp/asset.jpg",
+		"leftHeaderLogoAlt": "Left Header LOGO's Alt Text",
+		"rightHeaderLogoAlt": "Right Header LOGO's Alt Text",
+		"sling:resourceType": "srp/components/common/login-details",
+		"labels": {
+			"item0": {
+				"label": "Login",
+				"fieldType": "LOGIN_TITLE|65064648-b3d6-f219-98be-396e12feb351",
+				"jcr:primaryType": "nt:unstructured"
+			}
+		},
+		"onBoardDocumentLinks": {
+			"item0": {
+				"path": "www.adobe.com/content/dam/srp/asset.jpg",
+				"type": "docLink",
+				"label": "citreon",
+				"linkType": "newTab"
+			}
+		},
+		"reachLinks": {
+			"item0": {
+				"path": "www.adobe.com/content/dam/srp/asset.jpg",
+				"type": "docLink",
+				"label": "reach",
+				"linkType": "newTab"
+			}
+		},
+		"registrationLink": "www.google.com",
+		"registrationLabel": "O0183Y7291"
+	},
+	"lgndtls_nolabels": {
+		"loginLogo": "www.adobe.com/content/dam/srp/asset.jpg",
+		"mobileImage": "www.adobe.com/content/dam/srp/asset.jpg",
+		"leftHeaderLogo": "www.adobe.com/content/dam/srp/asset.jpg",
+		"rightHeaderLogo": "www.adobe.com/content/dam/srp/asset.jpg",
+		"desktopImage": "www.adobe.com/content/dam/srp/asset.jpg",
+		"desktopImageAlt": "Desktop Image",
+		"mobileImageAlt": "Mobile Image",
+		"leftHeaderLogoAlt": "Left Logo",
+		"rightHeaderLogoAlt": "Right Logo",
+		"loginLogoAlt": "Login Logo",
+		"reachLinks": {
+			"item0": {
+				"path": "www.adobe.com/content/dam/srp/asset.jpg",
+				"type": "docLink",
+				"label": "reach",
+				"linkType": "newTab"
+			}
+		},
+		"onBoardDocumentLinks": {
+			"item0": {
+				"path": "www.adobe.com/content/dam/srp/asset.jpg",
+				"type": "docLink",
+				"label": "citreon",
+				"linkType": "newTab"
+			}
+		},
+		"registrationLink": "www.google.com",
+		"registrationLabel": "O0183Y7291"
+	},
+	"lgndtls_images": {
+		"loginLogo": "www.adobe.com/content/dam/srp/asset.jpg",
+		"mobileImage": "www.adobe.com/content/dam/srp/asset.jpg",
+		"leftHeaderLogo": "www.adobe.com/content/dam/srp/asset.jpg",
+		"rightHeaderLogo": "www.adobe.com/content/dam/srp/asset.jpg",
+		"desktopImage": "www.adobe.com/content/dam/srp/asset.jpg",
+		"desktopImageAlt": "Desktop Image",
+		"mobileImageAlt": "Mobile Image",
+		"leftHeaderLogoAlt": "Left Logo",
+		"rightHeaderLogoAlt": "Right Logo",
+		"loginLogoAlt": "Login Logo",
+		"registrationLink": "www.google.com",
+		"registrationLabel": "O0183Y7291"
+	},
+	"lgndtls_differentcontentpath": {
+		"loginLogo": "dam/srp/asset.jpg",
+		"mobileImage": "dam/srp/asset.jpg",
+		"leftHeaderLogo": "dam/srp/asset.jpg",
+		"rightHeaderLogo": "dam/srp/asset.jpg",
+		"desktopImage": "dam/srp/asset.jpg",
+		"desktopImageAlt": "Desktop Image",
+		"mobileImageAlt": "Mobile Image",
+		"leftHeaderLogoAlt": "Left Logo",
+		"rightHeaderLogoAlt": "Right Logo",
+		"loginLogoAlt": "Login Logo",
+		"registrationLink": "www.google.com",
+		"registrationLabel": "O0183Y7291"
+	}
+
+}

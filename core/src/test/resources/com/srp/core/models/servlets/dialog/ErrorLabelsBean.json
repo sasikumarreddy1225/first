@@ -1,0 +1,10 @@
+{
+	"results": [
+		{
+			"labelId": "7b4b09cf-d6fe-bcf5-bc59-86727241c160",
+			"labelName": "Could not fetch the requested article",
+			"type": "error"
+		}
+	],
+	"errorData": null
+} 

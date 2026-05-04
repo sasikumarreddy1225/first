@@ -1,0 +1,115 @@
+{
+ "product_categories": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Tue Feb 03 2026 11:33:51 GMT+0530",
+  "jcr:lastModified": "Tue Feb 10 2026 14:33:25 GMT+0530",
+  "sling:resourceType": "srp/components/common/wsp/product-categories",
+  "labels": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "FrequentlyPurchased",
+      "fieldType": "FAVOURITES|6ddf37d0-9790-82e0-4be8-132127bd7bf5"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "Workshop Products",
+      "fieldType": "FAVOURITES_MESSAGE|8a3df591-431b-2bfa-f1f6-1306065a3ce7"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "Search PlaceHolder Text",
+      "fieldType": "FAVOURITES|6ddf37d0-9790-82e0-4be8-132127bd7bf5"
+    },
+    "item3": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "My Favorites",
+      "fieldType": "FAVOURITES|6ddf37d0-9790-82e0-4be8-132127bd7bf5"
+    }
+  },
+  "experienceFragments": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "xfPath": "/content/experience-fragments/srp/ee/it/en/banner/master"
+    }
+  },
+  "categories": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "iconPath": "/images/cat_auto_transmission.svg",
+      "label": "Air Conditioning",
+      "subcategories": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "iconPath": "/images/SC_Abrasive_Matting.svg",
+          "label": "Abrasive Matting",
+          "name": "Abrasive Matting"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "iconPath": "/images/SC_Abrasive_Sanding.svg",
+          "label": "Abrasive Sanding",
+          "name": "Abrasive Sanding"
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "iconPath": "/images/SC_Paint_Accessories.svg",
+          "label": "Paint Accessories",
+          "name": "Paint Accessories"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "iconPath": "/images/SC_Paint_Colors.svg",
+          "label": "Paint Colors",
+          "name": "Paint Colors"
+        }
+      }
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "iconPath": "/images/cat_car_gear.svg",
+      "label": "Bodywork",
+      "subcategories": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "iconPath": "/images/SC_Abrasive_Sanding.svg",
+          "label": "Electrical Components",
+          "name": "Electrical Components"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "iconPath": "/images/SC_Abrasive_Sanding.svg",
+          "label": "Abrasive Sanding",
+          "name": "Abrasive Sanding"
+        }
+      }
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "iconPath": "/images/cat_electrical_services.svg",
+      "label": "Boutique",
+      "subcategories": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "iconPath": "/images/SC_Paint_Colors.svg",
+          "label": "Steering System",
+          "name": "Steering System"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "iconPath": "/images/SC_Abrasive_Sanding.svg",
+          "label": "Electrical Components",
+          "name": "Electrical Components"
+        }
+      }
+    }
+  }
+}
+}

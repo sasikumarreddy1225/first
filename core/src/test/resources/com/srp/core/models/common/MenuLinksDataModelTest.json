@@ -1,0 +1,62 @@
+{
+	"menulinks_withoutID": {
+		"jcr:primaryType": "nt:unstructured",
+		"roleTags": [
+			"srp:position/04-sales-manager"
+		],
+		"name": "f365734b",
+		"type": "webLink",
+		"label": "Job Card List",
+		"category": "external",
+		"linkType": "default",
+		"linkDescription": "\u003Cp\u003EThis is Job Cards List\u003C/p\u003E\r\n",
+		"documentLink": "",
+		"link": "www.google.com",
+		"authField": "authvalue",
+		"catalogId": "Stellantis Original Parts & Technical Documentation"
+	},
+	"menulinks": {
+		"sling:resourceType": "srp/components/common/menulinks",
+		"roleTags": [
+			"srp:position/04-sales-manager"
+		],
+		"type": "docLink",
+		"label": "Job Card List",
+		"category": "external",
+		"linkType": "default",
+		"linkDescription": "\u003Cp\u003EThis is Job Cards List\u003C/p\u003E\r\n",
+		"documentLink": "/content/dam/sample.pdf",
+		"link": "www.google.com",
+		"catalogId": "Stellantis Original Parts & Technical Documentation",
+		"authField": "authvalue"
+	},
+	"favouritesmenulist_withoutId": {
+	   "jcr:primaryType": "nt:unstructured",
+		"roleTags": [
+			"srp:position/04-sales-manager"
+		],
+		"link": "www.google.com",
+		"name": "7acd6812",
+		"type": "webLink",
+		"category": "external",
+		"label": "TI Link",
+		"linkType": "newTab",
+		"webLink": "/login-saml-proxy?mode=initSSO&spName=TISP",
+		"catalogId": "Stellantis Original Parts & Technical Documentation",
+		"authField": "SAML"
+	},
+	"favouritesmenulist": {
+		"sling:resourceType": "srp/components/common/favouritesmenulist",
+		"roleTags": [
+			"srp:position/04-sales-manager"
+		],
+		"link": "www.google.com",
+		"type": "docLink",
+		"category": "external",
+		"label": "TI Link",
+		"linkType": "newTab",
+		"documentLink": "/content/dam/sample.pdf",
+		"catalogId": "Stellantis Original Parts & Technical Documentation",
+		"authField": "SAML"
+	}
+}

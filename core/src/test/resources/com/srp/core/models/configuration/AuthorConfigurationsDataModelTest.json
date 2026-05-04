@@ -1,0 +1,19 @@
+{
+  "authorconf": {
+    "jcr:primaryType": "nt:unstructured",
+    "roleTags": [
+      "srp:role/04-sales-manager"
+    ],
+    "brandTags": [
+      "srp:brand/fiat"
+    ],
+    "geoTags": [
+      "srp:geo/ee"
+    ],
+    "group": "everyone|everyone",
+    "sling:resourceType": "srp/components/common/authorConf"
+  },
+  "authorconf_null": {
+    "jcr:primaryType": "nt:unstructured"
+  }
+}

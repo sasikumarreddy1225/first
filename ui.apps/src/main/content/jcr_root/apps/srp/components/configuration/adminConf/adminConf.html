@@ -1,0 +1,9 @@
+<div class="admin-conf-comp padding10">
+        ${component.title}
+    <sly data-sly-use.conf="com.srp.core.models.configuration.AdminConfigDataModel">
+        <h4>Content Admins</h4>
+        <sly data-sly-list.groups="${conf.adminGroups}">
+            <li data-sly-test="${groups.groupName}">${groups.groupName}</li>
+        </sly>
+    </sly>
+</div>

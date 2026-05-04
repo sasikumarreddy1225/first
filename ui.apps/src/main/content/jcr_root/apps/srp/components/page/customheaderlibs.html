@@ -1,0 +1,26 @@
+<!--/*
+    Copyright 2017 Adobe Systems Incorporated
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicabe law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='srp.base'}"/>
+</sly>
+
+
+<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
+
+<script src="https://universal-editor-service.adobe.io/cors.js" async></script>
+<meta name="urn:adobe:aue:system:aem" content="https://author-p145287-e1708188.adobeaemcloud.com" />
+<meta name="urn:adobe:aue:config:service" content="https://universal-editor-service.adobe.io" />
+<meta name="urn:adobe:aue:config:page" content="${resource.path}" />

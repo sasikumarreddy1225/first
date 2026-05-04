@@ -1,0 +1,39 @@
+<div class="userMenu-comp">
+
+   <div class="srp-comp-title margin-bottom20">${component.title}</div>
+   <sly data-sly-use.userMenu="com.srp.core.models.common.UserMenuDataModel" />
+
+   <sly data-sly-test="${userMenu.userMenuLinks}">
+      <table style="width:100%; border-collapse: collapse;" border="1">
+
+         <tr>
+            <th>Label</th>
+            <th>Category</th>
+            <th>Link Path</th>
+            <th>Link Type</th>
+            <th>Auth Type</th>
+            <th>Type</th>
+         </tr>
+
+         <sly data-sly-list.linkItem="${userMenu.userMenuLinks}">
+            <tr>
+               <td>${linkItem.label}</td>
+               <td>${linkItem.category}</td>
+               <td class="column-wrap">${linkItem.link}</td>
+               <td>${linkItem.linkType}</td>
+               <td>${linkItem.authField}</td>
+               <td>${linkItem.type}</td>
+            </tr>
+         </sly>
+
+      </table>
+   </sly>
+   <sly data-sly-use.srpLabelsTemp="../../template/srpLabels.html">
+      <sly data-sly-call="${srpLabelsTemp.srpLabels @ srpLabelsObj=userMenu}"></sly>
+   </sly>
+
+   <sly data-sly-use.srpTagsTemp="../../template/srpTags.html"></sly>
+      <sly data-sly-call="${srpTagsTemp.tags @ srpTagsObj=userMenu}"></sly>
+   </sly>
+
+</div>

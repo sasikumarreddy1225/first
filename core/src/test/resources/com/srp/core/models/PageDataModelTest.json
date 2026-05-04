@@ -1,0 +1,19 @@
+{
+	"page": {
+		"sling:resourceType": "srp/components/page",
+		"jcr:primaryType": "cq:Page",
+		"title": "Sales",
+		"id":"abc12345",
+		"articleId": "1234acvd",
+		"cq:template": "/conf/srp/settings/wcm/templates/srp-menu-link-template",
+		"roleTags": [
+			"srp:position/04-sales-manager"
+		],
+		"geoTags": [
+			"geo/na/usa"
+		],
+		"brandTags": [
+			"srp:brand/fiat"
+		]
+	}
+}

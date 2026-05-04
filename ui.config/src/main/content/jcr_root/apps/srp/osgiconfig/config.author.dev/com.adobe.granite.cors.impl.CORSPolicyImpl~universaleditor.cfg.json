@@ -1,0 +1,35 @@
+{
+    "alloworigin": [
+        "https://experience.adobe.com"
+    ],
+    "alloworiginregexp": [],
+    "allowedpaths": [
+        "/content/srp/.*",
+        "/conf/srp/.*"
+    ],
+    "allowedheaders": [
+        "Origin",
+        "Accept",
+        "X-Requested-With",
+        "Content-Type",
+        "Access-Control-Request-Method",
+        "Access-Control-Request-Headers",
+        "Authorization",
+        "CSRF-Token"
+    ],
+    "allowedmethods": [
+        "GET",
+        "HEAD",
+        "POST",
+        "PUT",
+        "DELETE",
+        "OPTIONS",
+        "PATCH"
+    ],
+    "maxage": {
+        ":type": "Long",
+        "value": 60
+    },
+    "supportscredentials": true,
+    "exposedheaders": []
+}

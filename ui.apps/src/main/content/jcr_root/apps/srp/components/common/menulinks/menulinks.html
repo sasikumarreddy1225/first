@@ -1,0 +1,47 @@
+<div class="menulinks-comp padding10" 
+     data-aue-resource="urn:aem:${resource.path}"
+     data-aue-type="component"
+     data-aue-model="menulinks"
+     data-aue-label="Menulinks">
+  <div class="srp-comp-title">
+    ${component.title}
+  </div>
+  <sly data-sly-use.menulinks="com.srp.core.models.common.MenuLinksDataModel">
+    <sly data-sly-use.srpTagsTemp="../../template/srpTags.html"></sly>
+    <sly data-sly-call="${srpTagsTemp.tags @ srpTagsObj=menulinks}"></sly>
+ </sly>
+    <sly data-sly-test="${menulinks.name}">
+      <div class="padding10">Menulink id : ${menulinks.name}</div>
+    </sly>
+    <sly data-sly-test="${menulinks.label}">
+      <div class="padding10" data-aue-prop="label"
+         data-aue-type="text"
+         data-aue-label="Menulink Label">Menulink Label : ${menulinks.label}</div>
+    </sly>
+    <sly data-sly-test="${menulinks.type=='docLink'}">
+       <div class="padding10" data-aue-prop="documentLink"
+         data-aue-type="reference"
+         data-aue-label="Document Link">Document Link: ${menulinks.documentLink}</div>    
+    </sly>
+    <sly data-sly-test="${menulinks.type=='webLink'}">
+       <div class="padding10" data-aue-prop="link"
+         data-aue-type="reference"
+         data-aue-label="Menu Link">Menu Link: ${menulinks.link}</div>    
+    </sly>
+    <sly data-sly-test="${menulinks.linkType}">
+      <div class="padding10">Link Target Type : ${menulinks.linkType}</div>
+    </sly>
+    <div class="padding10">Default Link: ${menulinks.isDefault}</div>
+    <sly data-sly-test="${menulinks.linkDescription}">
+      <div class="padding10" data-aue-prop="linkDescription"
+         data-aue-type="richtext"
+         data-aue-label="Description">Description : ${menulinks.linkDescription @context='html'}</div>
+    </sly>
+    <sly data-sly-test="${menulinks.authField}">
+      <div class="padding10">Auth Type : ${menulinks.authField}</div>
+    </sly>
+    <sly data-sly-test="${menulinks.catalogId}">
+        <div class="padding10">Catalog Id : ${menulinks.catalogId}</div>
+    </sly>
+  </sly>
+</div>

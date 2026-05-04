@@ -1,0 +1,10 @@
+<template data-sly-template.srpexpf="${ @srpexpObj }">
+    <div data-sly-test="${srpexpObj.experienceFragments.size}" class="expfrg-container">
+		<h2>Experience Fragments</h2>
+        <ul>
+			<sly data-sly-list.srpexplist="${srpexpObj.experienceFragments}">
+                <li class="">${srpexplist.xfPath}</li>
+            </sly>
+		</ul>
+    </div>
+</template>
